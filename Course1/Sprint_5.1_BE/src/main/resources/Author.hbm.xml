@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Author" table="Author">
+        <id name="authID" type="int">
+            <column name="Identity"/>
+            <generator class="assigned"></generator>
+        </id>
+        <property name="authName" type="string" column="AUTHOR" length="20"></property
+        <property name="bookName" type="string" column="BOOK" length="50"></property>
+        <property name="cost" type="int" column="MRP" length="10"></property>
+    </class>
+</hibernate-mapping>

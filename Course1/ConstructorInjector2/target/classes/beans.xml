@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="org.example.cab" id="cab">
+        <constructor-arg index="0" value="9211" />
+        <constructor-arg index="1" value="I10" />
+        <constructor-arg index="2" value="black" />
+    </bean>
+
+    <bean class="org.example.commuter" id="com" >
+        <constructor-arg index="0" value="Sanjay" />
+        <constructor-arg index="1" value="9337310049" />
+        <constructor-arg index="2" ref="cab" />
+    </bean>
+</beans>
